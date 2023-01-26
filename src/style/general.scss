@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+.main-wrapper{
+    width: 100vw;
+    height: 100vh;
+    
+    .container{
+        width: 90%;
+        max-width: 1200px;
+        padding: 30px;
+        margin: 0 auto;
+        
+        .proj_box{
+            margin: 80px 0px;
+        }
+
+    }
+}
