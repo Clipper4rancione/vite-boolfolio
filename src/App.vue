@@ -8,15 +8,17 @@ export default {
     },
     data(){
         return{
-            baseUrl: 'http://127.0.0.1:8000/api/'
+            baseUrl: 'http://127.0.0.1:8000/api/',
+            projects: {}
         }
     },
     methods: {
         getApi(){
 
             axios.get(this.baseUrl + 'projects')
+
             .then(result => {
-                this.projects = result.data.project_array;
+                this.projects = result.data;
                 console.log(this.projects);
             })
             
